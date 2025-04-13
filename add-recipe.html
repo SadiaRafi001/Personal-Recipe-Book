@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add-Recipe</title>
+    </head>
+    <body bgcolor="pink">
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="add-recipe.html">Add Recipe</a> |
+            <a href="recipe-list.html">Recipe List</a>
+        </p>
+        <hr>
+        <h1>(Add a Recipe)  افزودن دست پخت</h1> 
+
+        <h2>Submit Your Recipe</h2>
+        
+        <form action="#" method="POST">
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+            
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="5" required></textarea><br><br>
+            
+            <label for="instructions">Cooking Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="5" required></textarea><br><br>
+            
+            <label for="image-url">Image URL:</label><br>
+            <input type="text" id="image-url" name="image-url"><br><br>
+    
+            <label for="recipe-category">Recipe Category:</label><br>
+            <select id="recipe-category" name="recipe-category" required>
+                <option value="">Select a Category</option>
+                <option value="Desserts">Desserts</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Hawasana">Hawasana</option>
+                <option value="Meat Dishes">Kabab</option>
+                <option value="Breakfast"> Breakfast</option>
+            </select><br><br>
+            
+            <button type="submit">Add Recipe</button>
+        </form>
+        <h3>Rate this Recipe:</h3>
+        <p>
+          <label><input type="radio" name="rating" value="1"> ★☆☆☆☆</label><br>
+          <label><input type="radio" name="rating" value="2"> ★★☆☆☆</label><br>
+          <label><input type="radio" name="rating" value="3"> ★★★☆☆</label><br>
+          <label><input type="radio" name="rating" value="4"> ★★★★☆</label><br>
+          <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+        </p>
+
+
+
+    </body>
+</html>
